@@ -30,5 +30,39 @@ Final digunakan untuk membuat objek yang sifatnya tidak berubah. Perbedaan antar
 - menggunakan _counter % 2 == 0 untuk menampilkan genap-ganjil
 
 
+# Tugas 8 PBP
+
+# Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+push menumpuk route teratas pada stack sedangkan pushReplacement menggantikan route teratas dengan route yang terbaru.
+
+# Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+- DropdownButton: Memilih fungsi yang diinginkan
+- DropdownHideUnderline: agar menghilangkan garis pada dropdown
+- TextButton: Text yang dapat ditekan
+- ListTile: untuk mengisi ListView dan berisi judul serta leading icons atau trailing icons.
+- Material: menggabungkan sejumlah widget yang umumnya diperlukan untuk aplikasi yang mengimplementasikan Material Design.
+
+# Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+- onPressed
+- onTap
+- onLongPress
+- onHover
+- onFocusChange
+- onFocusChange
+- onTap
+
+# Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+Navigator menggunakan metode push pada bagian atas stack dan widget Navigator menambahkan layar baru ke bagian atas stack.
+
+# Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Membuat sebuah halaman baru bernama databudget.dart dan tambahbudget.dart serta drawer.dart untuk menyusun drawer
+- Set-up navigasi halaman pada Drawer
+- Membuat globals.dart untuk menyimpan list object budget.
+- Handling save button untuk menyimpan ke dalam global List
+
+
+
+
+
 
 

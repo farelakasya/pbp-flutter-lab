@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'drawer.dart';
+import 'databudget.dart';
+import 'tambahbudget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-
+        drawer: const DrawerApp(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
