@@ -61,6 +61,31 @@ Navigator menggunakan metode push pada bagian atas stack dan widget Navigator me
 - Handling save button untuk menyimpan ke dalam global List
 
 
+# Tugas 9 PBP
+
+# Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Kita bisa mengambil data JSON tanpa membuat model terlebih dahulu dengan membuat dynamic mapi JSON dan mengakses dengan dictionary python (data[key]). Tetapi, hal tersebut tidak disarankan karena kita tidak akan tahu apakah ada kesalahan pada field.
+
+# Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+- TextButton: Text yang dapat ditekan
+- ListTile: untuk mengisi ListView dan berisi judul serta leading icons atau trailing icons.
+- Checkbox: membuat checkbox yang dapat diklik.
+- FutureBuilder: Widget yang dibuat berdasarkan snapshot interaksi dengan future
+
+# Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+- Membuat function http request dengan method GET secara async untuk mengambil data ke pihak eksternal
+- Pada function tersebut, lakukan parsing dengan jsonDecode() untuk mengubah response String menjadi JSON
+- Konversi object  JSON ke dalam suatu Model object
+- Gunakan widget FutureBuilder untuk menampilkan widget-widget dengan snapshot data terbaru yang telah dikonversi menjadi sebuah object
+
+
+# Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Tambahkan My Watchlist pada drawer.dart
+- buatlah mywatchlist.dart dan buat class MyWatchlist
+- buat get_watchlist.dart dan fungsinya untuk mengambil data JSON
+- buat my_watchlist.dart dan di dalamnya buat a MyWatchlistPage StatefulWidget yang bisa mengambil data mywatchlist
+- buat my_watchlist_detail.dart dan buat  MyWatchlistDetailPage StatelessWidget  untuk menampilkan data
 
 
 

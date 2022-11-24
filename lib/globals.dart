@@ -1,4 +1,4 @@
 library counter_7.globals;
-import 'tambahbudget.dart';
+import 'model/budget.dart';
 
 List<Budget> budgets = [];
